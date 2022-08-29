@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Diminua e aumente a tela.</p>
+
+    <picture>
+        <!-- max-width diz que enquanto o tamanho da tela for menor que ele, vai renderizar a imagem dada em srcset-->
+        <source media="(max-width: 750px)" srcset="imagens/imagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemM.png" type="image/png">
+        <img src="imagens/imagemG.png" alt="imagem-flexivel.png">
+    </picture>
+
+    <h1>Reprodzir áudio</h1>
+    <p>Reproduzindo áudio em HTML.</p>
+    <!--
+        MP3 WAV OGG
+        <audio src="media/music.mp3" controls autoplay="True"></audio>
+    -->
+    <audio preload="metadata" controls loop autoplay>
+        <source src="media/music.mp3" type="audio/mpeg">
+        <source src="media/music.ogg" type="audio/ogg">
+        <source src="media/music.wav" type="audio/wav">
+        <p>Infelizmente seu navagador não é compativel para executar o áudio, <a href="media/music.mp3">Clique aqui para baixar</a></p>
+    </audio>
+</body>
+</html>

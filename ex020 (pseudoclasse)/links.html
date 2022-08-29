@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Links</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: red;
+        }
+
+        a:active{
+            background-color: yellow;
+            width: 200px;
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: green;
+        }
+
+        a::after{
+            content: ' [Link]';
+            color: gray;
+        }
+
+        .especial::before{
+            content: '[Não funciona] ';
+            color: gray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de links</h1>
+    <ul>
+        <li><a href="https://youtube.com/c/mrjovesson" target="_blank">Meu canal</a></li>
+        <li><a class="especial" href="discord.gg" target="_blank">Meu Discord</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-16-aula-01-modelo-de-caixas-primeiros-passos/" target="_blank">Curso em videos</a></li>
+    </ul>
+</body>
+</html>

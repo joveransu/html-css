@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping TAGs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        header{
+            background-color: bisque;
+            padding: 15px 10px 25px 40px;
+        }
+
+        nav{
+            text-align: right;
+            background-color: cornsilk;
+            border-radius: 20px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgb(167, 167, 3);
+        }
+
+        nav > a{
+            padding-right: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: chocolate;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        h1{
+            text-align: center;
+            color: orange;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.387);
+        }
+
+        h2{
+            border: 10px;
+            border-color: red;
+            outline-width: 10px;
+            outline-color: red;
+        }
+
+        article > p{
+            background-color: white;
+        }
+        footer{
+            color: white;
+            text-align: center;
+            padding-top: 45px;
+        }
+
+        footer > p{
+            background-color: black;
+        }
+
+        main {
+            outline: auto;
+            outline-width: 5;
+            padding: 5px;
+            box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.33);
+            border-radius: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Teste de Artigos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos nostrum veniam quos quam atque nobis ullam dolore recusandae velit. Doloribus accusantium ipsa accusamus at, aut eaque in enim ipsum.</p>
+                <aside>
+                    <p>Artigo escrito por Ansu</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ansu</p>
+    </footer>
+</body>
+</html>
