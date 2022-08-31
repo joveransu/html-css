@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            /* o que ta de fora tem pos relativa */
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            /* o que ta dentro tem pos absoluta */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* margin: auto; para posicionamento horizontal */
+
+            /* definido a posição absoluta e relativa, na parte de absoluta podemos usar o left: (tamanho)px; e top: (size)px; */
+            
+            left: 50%;
+            top: 50%;
+
+            /* Irá transformar a imagem, seja seu tamanho ou posição, com todas configurações desse docuemtno centralizamos o conteudo bem no centro da página, independente do tamanho da página */
+            transform: translate(-50%, -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
