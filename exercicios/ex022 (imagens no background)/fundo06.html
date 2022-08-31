@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
@@ -13,26 +13,52 @@
             background-position: center center;
             background-repeat: no-repeat;
             /* 
-            AUTO = Padrão
-            CONTAIN = exibe 100% da imagem (gera barras pretas dependendo do tamanho de exibição) 
-            COVER = exibe a imagem em toda tela (pode cortar a imagem, ex: exibir um pedaço dela)
+                AUTO = Padrão
+                CONTAIN = exibe 100% da imagem (gera barras pretas dependendo do tamanho de exibição) 
+                COVER = exibe a imagem em toda tela (pode cortar a imagem, ex: exibir um pedaço dela)
             */
             background-size: cover;
+            /*
+                SCROLL = (Padrão) O fundo irá rolar junto com o conteudo
+                FIXED = O fundo ficará fixo
+            */
+            background-attachment: fixed;
 
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+
+                Na documentação diz que o size é aplicado ali, porém da problemas ao seguir, então remova o size e use-o separadamente.
+
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+                background-size: cover;
+            */
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border-radius: 10px;
             border: 1px solid darkblue;
         }
+        /*p{
+            text-align: justify;
+        }*/
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint doloribus asperiores debitis repellendus aut vero! Explicabo quo dolore rem tempora laborum tenetur. Officiis, deleniti aperiam consequuntur maxime quos voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid esse facere recusandae corrupti, officia aspernatur minima hic impedit iusto, repellendus quo deleniti quae quam dicta nisi! Dolores, esse libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi atque commodi, nobis neque eveniet cum rerum magni quas consequuntur fuga iusto dolore sapiente explicabo quos? Neque praesentium expedita obcaecati?</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint doloribus asperiores debitis repellendus aut vero! Explicabo quo dolore rem tempora laborum tenetur. Officiis, deleniti aperiam consequuntur maxime quos voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid esse facere recusandae corrupti, officia aspernatur minima hic impedit iusto, repellendus quo deleniti quae quam dicta nisi! Dolores, esse libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi atque commodi, nobis neque eveniet cum rerum magni quas consequuntur fuga iusto dolore sapiente explicabo quos? Neque praesentium expedita obcaecati?</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint doloribus asperiores debitis repellendus aut vero! Explicabo quo dolore rem tempora laborum tenetur. Officiis, deleniti aperiam consequuntur maxime quos voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid esse facere recusandae corrupti, officia aspernatur minima hic impedit iusto, repellendus quo deleniti quae quam dicta nisi! Dolores, esse libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi atque commodi, nobis neque eveniet cum rerum magni quas consequuntur fuga iusto dolore sapiente explicabo quos? Neque praesentium expedita obcaecati?</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint doloribus asperiores debitis repellendus aut vero! Explicabo quo dolore rem tempora laborum tenetur. Officiis, deleniti aperiam consequuntur maxime quos voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid esse facere recusandae corrupti, officia aspernatur minima hic impedit iusto, repellendus quo deleniti quae quam dicta nisi! Dolores, esse libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi atque commodi, nobis neque eveniet cum rerum magni quas consequuntur fuga iusto dolore sapiente explicabo quos? Neque praesentium expedita obcaecati?</p>
+        <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sint doloribus asperiores debitis repellendus aut vero! Explicabo quo dolore rem tempora laborum tenetur. Officiis, deleniti aperiam consequuntur maxime quos voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid esse facere recusandae corrupti, officia aspernatur minima hic impedit iusto, repellendus quo deleniti quae quam dicta nisi! Dolores, esse libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi atque commodi, nobis neque eveniet cum rerum magni quas consequuntur fuga iusto dolore sapiente explicabo quos? Neque praesentium expedita obcaecati?</p>
     </main>
 </body>
