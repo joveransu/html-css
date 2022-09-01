@@ -2,11 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 :root {
     --font-especial: 'Passion One', cursive;
-    --font-texto: 'Sriracha', cursive;
+    --font-texto: 'Kalam', cursive;
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,9 +15,13 @@
     margin: 0px;
 }
 
-body {
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
     font-family: var(--font-padrao);
 }
+
+/* header */
 
 header {
     background-color: black;
@@ -25,33 +29,57 @@ header {
     text-align: center;  
 }
 
-header h1 {
+header > h1 {
     font-family: var(--font-especial);
-    font-size: 6.9em;
+    font-size: 10vw;
     padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header p {
-    padding: 0px 0px 60px 0px;
-    font-size: 1.2em;
+    padding: 0px 0px 50px 0px;
+    font-family: var(--font-padrao);
 }
 
-header a{
+a{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bolder;
     color: white;
-    text-align: justify;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.up-size {
-    font-size: 1.4em;
+/* Body */
+
+section > p {
+    font-family: var(--font-texto);
+    font-size: 3.4vw;
 }
 
-/* Body */
+section {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    line-height: 3em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    color: rgb(59, 58, 58);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
 
 #joaninha {
     background: black url('../imagens/background001.jpg') no-repeat center center;
@@ -61,21 +89,11 @@ header a:hover {
     background: black url('../imagens/background002.jpg') no-repeat center center;
 }
 
+/* Rodapé */ 
+
 footer{
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 1.2em;
     padding: 10px;
-}
-
-footer a{
-    font-weight: 400;
-    text-decoration: none;
-    color: white
-}
-
-footer a:hover{
-    text-decoration: underline;
-    color: yellow;
 }
