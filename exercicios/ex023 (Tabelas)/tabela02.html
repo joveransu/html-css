@@ -15,6 +15,13 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -25,8 +32,17 @@
             color: white;
         }
 
+        /* Pseudo classe para pular na tabela de 2 em 2 (2n), (2n-1), 'odd' para cedulas impares e 'even' para cedulas pares*/
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
+        }
+
+        #minha{
+            background-color: orange;
         }
     </style>
 </head>
@@ -36,6 +52,7 @@
     <!--
         ANATOMIA
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,12 +60,13 @@
             TFOOT
                 TR, TD, TH
     -->
-    <p>Esse é o <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Link</a> usado para o exercício. Update 04/09/2022 às 02:06</p>
     <table>
+        <caption><p>Esse é o <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Link</a> usado para o exercício. Update 04/09/2022 às 02:06</p></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!--Para definir o titulo de coluna a ele-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +98,7 @@
                 <td>Pernambuco</td>
                 <td class="num">9.674.793</td>
             </tr>
-            <tr>
+            <tr id="minha">
                 <td>Ceará</td>
                 <td class="num">9.240.580</td>
             </tr>
@@ -163,7 +181,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th> <!--Titulo-->
+                <!--Titulo de linha, scope = row-->
+                <th scope="row">Total de Habitantes</th> <!--Titulo-->
                 <td class="num"><strong>209.952.288</strong></td> <!--Dado-->
             </tr>
         </tfoot>
