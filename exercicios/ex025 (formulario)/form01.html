@@ -17,9 +17,15 @@
         action="cadastro.php" = vai ser acionado quando tocar no botao submit do form
 
         autocomplete="off" = Remove os textos auxiliares das caixas
+
+        Existe dois metodos de enviou de formulario, o padrão é GET
+        method="GET" = Coloca os dados na url quando clicar no botao, pode enviar dados até 3000 bytes (Aproximadamente 3000 letras), não usar quando for enviar fotos, dados sensiveis (numeros de cartoes, endereço, telefone) ou senhas, é um pouco mais rápido
+
+        method="POST" = NÃO coloca os dados na url quando clicar no botao, recomendado para dados sensiveis, porem com inspecto da para ver os dados (https é o recomendado ao trabalhar com dados), dados acima de 3000 bytes, para enviar fotos, videos... é um pouco devagar, mas não percepitivel
     -->
-    <form action="cadastro.php" autocomplete="off">
-        <!-- Para vincular o nome da label com o campo de preencher precisamos colocar o for="ID do campo" -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- Para vincular o nome da label com o campo de preencher precisamos colocar o for="ID do campo" 
+        -->
         <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
 
         <p><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
