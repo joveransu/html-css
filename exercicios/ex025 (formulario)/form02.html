@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastros.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <!-- 
+                Campo obrigatório use 'required'
+                
+                minlength="4" = Para o campo ter no minimo 4 digitos
+
+                maxlength="15" = Para o campo ter no máximo 15 digitos
+
+                size="10" = Deixa o campo para mostrar 10 caracteres
+
+                placeholder="Nome de usuário" = Uma dica que vai aparecer no campo indicando o que é ali
+
+                Com o autocomplete="on" no form ligado, podemos usar autocomplete="username" em input, esse server para usuário, o navegador irá sugerir alguns nomes de usuário que já foram usados
+            -->
+            <input type="text" name="user" id="isuer" required minlength="4" maxlength="15" size="15" placeholder="Nome de usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipass">Senha: </label>
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="64" size="8" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
